@@ -1,5 +1,5 @@
 # Python-darslari
-Bu yerda boshlang'ich python kodlari joylab boriladi
+Bu yerda boshlang'ich python kodlari joylab boriladi.
 #6.03.2026
 #Python darslari. Mohirdev(YouTube)
 #if-elif-else operatorlari.
@@ -48,3 +48,4 @@ if choy and salat: #mijoz choy ham salat ham oldi
 elif choy or salat: #mijoz choy yoki salat oldi
     narh += 5000  #narh = narh +5000
 print(f"Ja'mi narh {narh}-ga teng.")
+
