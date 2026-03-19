@@ -83,3 +83,30 @@ telefonlar = {
 }
 
 print(f"Shohro'zning telefoni: {telefonlar['shohruz']}")
+
+telefonlar = {
+    'shohruz' : 'redmi note 11 pro',
+    'shahin' : 'mi note 10',
+    'sheroz' : 'honor x6c',
+    'mustafo' : 'samsung s21',
+    'shohzod' : 'redmi note 10c'
+}
+
+phone = telefonlar['mustafo']
+print(f"Mustafoning telefoni {phone}")
+phone = telefonlar.get('mustafo',"Bunday ism mavjud emas")
+phone = telefonlar.get('hasan', "Bunday ism mavjud emas")
+print(phone)
+
+telefonlar = {
+    'shohruz' : 'redmi note 11 pro',
+    'shahin' : 'mi note 10',
+    'sheroz' : 'honor x6c',
+    'mustafo' : 'samsung s21',
+    'shohzod' : 'redmi note 10c'
+}
+ism = input('Ismingizni kiriting: ')
+if ism in telefonlar:
+    print(telefonlar[ism])
+else:
+    print("Bunday ism yo'q")
