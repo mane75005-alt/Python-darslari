@@ -50,3 +50,16 @@ elif choy or salat: #mijoz choy yoki salat oldi
     narh += 5000  #narh = narh +5000
 print(f"Ja'mi narh {narh}-ga teng.")
 ```
+
+telefonlar = {
+    'shohruz' : 'redmi note 11 pro',
+    'shahin' : 'mi note 10',
+    'sheroz' : 'honor x6c',
+    'mustafo' : 'samsung s21',
+    'shohzod' : 'redmi note 10c'
+}
+ism = input('Ismingizni kiriting: ')
+if ism in telefonlar:
+    print(telefonlar[ism])
+else:
+    print("Bunday ism yo'q")
