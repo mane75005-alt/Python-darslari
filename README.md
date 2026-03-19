@@ -49,8 +49,31 @@ if choy and salat: #mijoz choy ham salat ham oldi
 elif choy or salat: #mijoz choy yoki salat oldi
     narh += 5000  #narh = narh +5000
 print(f"Ja'mi narh {narh}-ga teng.")
-```
 
+
+talaba_0 = {
+    'ism' : "irismatov shohruzbek",
+    'yosh' : 20, 
+    't_yil' : 2006,
+    }
+print(f"{talaba_0['ism'].title()},\
+   {talaba_0['yosh']}-yoshda, {talaba_0['t_yil']} - yilda tug'ilgan.")
+talaba_0['kurs'] = 1
+talaba_0['fakultet'] = 'fizika-matematika'
+talaba_0["yo'nalish"] = 'amaliy matematika'
+talaba_0['ism'] = 'xujayev sherozbek'
+print(talaba_0)
+talaba_1 = {}
+talaba_1['ism'] = 'qurbonaliyev shahin'
+talaba_1['yosh'] = 19
+talaba_1['kurs'] = 1
+talaba_1['t_yil'] = 2006
+print(f"{talaba_1['ism'].title()} {talaba_1['yosh']}-yoshda {talaba_1['kurs']} -kurs {talaba_1['t_yil']}-yilda tug'ilgan")
+talaba_1['kurs'] = 4
+print(f"{talaba_1['ism'].title()} {talaba_1['yosh']}-yoshda {talaba_1['kurs']} -kurs {talaba_1['t_yil']}-yilda tug'ilgan")
+print(talaba_1)
+del talaba_1['t_yil']
+print(talaba_1)
 telefonlar = {
     'shohruz' : 'redmi note 11 pro',
     'shahin' : 'mi note 10',
@@ -58,8 +81,5 @@ telefonlar = {
     'mustafo' : 'samsung s21',
     'shohzod' : 'redmi note 10c'
 }
-ism = input('Ismingizni kiriting: ')
-if ism in telefonlar:
-    print(telefonlar[ism])
-else:
-    print("Bunday ism yo'q")
+
+print(f"Shohro'zning telefoni: {telefonlar['shohruz']}")
